@@ -1,0 +1,54 @@
+{
+  "name": "mercedes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "suites": "mocha --timeout 120000 --recursive api --reporter mochawesome",
+    "suiteauth": "mocha --timeout 120000 --recursive api/auth.js --reporter mochawesome",
+    "suiteparticipant": "mocha --timeout 120000 --recursive api/participant.js --reporter mochawesome",
+    "suiteverifydoc": "mocha --timeout 120000 --recursive api/verifydoc.js --reporter mochawesome",
+    "suiteredemption": "mocha --timeout 120000 --recursive api/redemption.js --reporter mochawesome",
+    "suitepartfordealer": "mocha --timeout 120000 --recursive api/partfordealer.js --reporter mochawesome",
+    "suiteforgotpass": "mocha --timeout 120000 --recursive api/forgotpass.js --reporter mochawesome",
+    "suiteavailablestars": "mocha --timeout 120000 --recursive api/availablestars.js --reporter mochawesome",
+    "suiteavailablepoints": "mocha --timeout 120000 --recursive api/availablepoints.js --reporter mochawesome",
+    "suiteeditparticipant": "mocha --timeout 120000 --recursive api/editparticipant.js --reporter mochawesome",
+    "suiteredemptioncode": "mocha --timeout 120000 --recursive api/redemptioncode.js --reporter mochawesome",
+    "suiteuflist": "mocha --timeout 120000 --recursive api/uflist.js --reporter mochawesome",
+    "suitecitylist": "mocha --timeout 120000 --recursive api/citylist.js --reporter mochawesome",
+    "suitesearchcep": "mocha --timeout 120000 --recursive api/searchcep.js --reporter mochawesome",
+    "suitescontactsubject": "mocha --timeout 120000 --recursive api/contactsubject.js --reporter mochawesome",
+    "suitescontactsusnologged": "mocha --timeout 120000 --recursive api/contactusnologged.js --reporter mochawesome",
+    "suitescontactsuslogged": "mocha --timeout 120000 --recursive api/contactuslogged.js --reporter mochawesome",
+    "suitescontactussubjectid": "mocha --timeout 120000 --recursive api/contactussubjectid.js --reporter mochawesome",
+    "testChakram": "./node_modules/mocha/bin/mocha",
+    "testChakramWin": "node .\\node_modules\\mocha\\bin\\mocha"
+  },
+  "keywords": [
+    "gruntplugin",
+    "grunt",
+    "saucelabs",
+    "test",
+    "mocha"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chakram": "^1.4.0",
+    "module": "^1.2.5",
+    "module.js": "^2.2.4"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "chai-http": "^3.0.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-saucelabs": "^9.0.0",
+    "mocha": "^3.5.3",
+    "mochawesome": "^3.0.3"
+  }
+}

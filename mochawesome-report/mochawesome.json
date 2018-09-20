@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-09-20T14:59:31.364Z",
+    "end": "2018-09-20T14:59:33.209Z",
+    "duration": 1845,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "e5cedf87-8baf-4a89-9efc-9c349e9e518a",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "4271580a-1448-401a-9dc6-9eecdfe0a9ab",
+        "title": "Testes na Api de listagem de fale conosco por status",
+        "fullFile": "C:\\Users\\rafael.lima\\workspace\\mercedesAPITests\\api\\contactussubjectid.js",
+        "file": "\\api\\contactussubjectid.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: setup",
+            "fullTitle": "Testes na Api de listagem de fale conosco por status \"before all\" hook: setup",
+            "timedOut": false,
+            "duration": 1510,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "var authService = new AuthService(this);\nreturn authService.authParticipant(config.USERNAME, config.PASS, config.CLIENT_ID).then(function(response) {\n    token = response.body.access_token;\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ff71d339-b1d0-46df-a45a-a324ba9980de",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Deve obter status de fale conosco por id",
+            "fullTitle": "Testes na Api de listagem de fale conosco por status Deve obter status de fale conosco por id",
+            "timedOut": false,
+            "duration": 308,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var contactussubjectidService = new ContactussubjectidService(this);\nvar authService = new AuthService(this);\nreturn contactussubjectidService.getStatuses(token).then(function(response){\n    expect(response, 'Deve responder com OK no status').to.have.status(config.util.HTTP.OK);\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b37d16ec-5d65-43dc-9100-e77c742dc28d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b37d16ec-5d65-43dc-9100-e77c742dc28d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 308,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 120000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 120000
+  },
+  "copyrightYear": 2018
+}
